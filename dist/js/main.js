@@ -1,4 +1,4 @@
-const featuredEvents = document.querySelectorAll(".featured-events");
+const featuredEvents = document.querySelectorAll(".animate");
 
 const isInViewPort = (el) => {
   const rect = el.getBoundingClientRect();
