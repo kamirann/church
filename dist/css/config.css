@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Roboto:ital@0;1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #070b0c;
+  font-family: "Montserrat", sans-serif; }
+
+.container {
+  width: 1340px;
+  margin: auto;
+  overflow: hidden; }
+
+a {
+  text-decoration: none;
+  color: #f5f5f5cc; }
+  a:hover {
+    color: #ffc961; }
+
+.current {
+  color: #f5f5f5; }
+  .current:hover {
+    color: #f5f5f5; }
+
+.title {
+  color: #f5f5f5;
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1.32; }
+
+.text {
+  color: #f5f5f5cc;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif; }
+
+.bg-dark {
+  background: #070b0c; }
+
+.bg-dark-secondary {
+  background: #f7f7f71a; }
+
+.btn-primary, .btn-secondary {
+  padding: 1.1rem 2rem;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer; }
+
+.btn-primary {
+  background: transparent;
+  color: #f5f5f5;
+  border: 1px solid rgba(245, 245, 245, 0.1); }
+  .btn-primary:hover {
+    background: #ffc961; }
+
+.btn-secondary {
+  background: #ffc961;
+  color: #070b0c;
+  border: 1px solid #ffc961; }
+  .btn-secondary:hover {
+    color: #f5f5f5;
+    background: #070b0c;
+    border: 1px solid #f5f5f5; }

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Roboto:ital@0;1&display=swap");
+
+$primary-color: #f5f5f5;
+$secondary-color: #ffc961;
+$light-color: #f5f5f5cc;
+$dark-color: #070b0c;
+$secondary-dark-color: #f7f7f71a;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $dark-color;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1340px;
+  margin: auto;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $light-color;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+.current {
+  color: $primary-color;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.title {
+  color: $primary-color;
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1.32;
+}
+
+.text {
+  color: $light-color;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-dark {
+  background: $dark-color;
+}
+
+.bg-dark-secondary {
+  background: $secondary-dark-color;
+}
+
+%shared-btn {
+  padding: 1.1rem 2rem;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn {
+  &-primary {
+    @extend %shared-btn;
+    background: transparent;
+    color: $primary-color;
+    border: 1px solid rgba($light-color, 0.1);
+
+    &:hover {
+      background: $secondary-color;
+    }
+  }
+
+  &-secondary {
+    @extend %shared-btn;
+    background: $secondary-color;
+    color: $dark-color;
+    border: 1px solid $secondary-color;
+
+    &:hover {
+      color: $primary-color;
+      background: $dark-color;
+      border: 1px solid $primary-color;
+    }
+  }
+}
