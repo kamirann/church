@@ -6,7 +6,7 @@ header {
     border-bottom: 0.2px solid rgba(#f5f5f5cc, 0);
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 
     .overlay {
       display: flex;
@@ -177,5 +177,104 @@ header {
         }
       }
     }
+  }
+}
+
+// Our Church Story
+#our-church-story {
+  .church-story-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 30px;
+    padding-top: 240px;
+
+    .church-story-content {
+      h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.1;
+        width: 40%;
+        margin-bottom: 3.5rem;
+      }
+
+      p.text {
+        font-size: 18px;
+        line-height: 1.7;
+        width: 60%;
+        opacity: 1;
+        margin-bottom: 3.5rem;
+      }
+
+      h3 {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        word-spacing: 5px;
+        margin-bottom: 1.7rem;
+      }
+
+      ul {
+        list-style: outside;
+        margin: 0 0 3.2rem 2.5rem;
+      }
+
+      li {
+        color: $primary-color;
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .img-text {
+        margin: 0 0 00.5rem 1rem;
+      }
+
+      div {
+        display: block;
+        width: 63%;
+        height: 0.1px;
+        background: rgba($light-color, 0.2);
+        margin: 2.35rem 0 4.25rem;
+      }
+
+      a {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 1.1rem 2.6rem;
+      }
+    }
+
+    .church-story-image {
+      position: relative;
+
+      .img-1 {
+        position: absolute;
+        top: -55px;
+        right: 0;
+        z-index: 1;
+        animation: sd 30s linear infinite;
+      }
+
+      .img-2 {
+        margin-left: 5rem;
+        transition: filter 0.4s;
+
+        &:hover {
+          filter: blur(1.5px);
+        }
+      }
+    }
+  }
+}
+
+@keyframes sd {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-360deg);
   }
 }

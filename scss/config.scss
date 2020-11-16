@@ -78,6 +78,7 @@ a {
     border: 1px solid rgba($light-color, 0.1);
 
     &:hover {
+      color: $primary-color;
       background: $secondary-color;
     }
   }
@@ -94,4 +95,14 @@ a {
       border: 1px solid $primary-color;
     }
   }
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 3rem 0;
+}
+.py-3 {
+  padding: 4.5rem 0;
 }
