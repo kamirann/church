@@ -277,14 +277,16 @@ header #hero {
 
 #sermons h1 {
   transform: translateY(100px);
-  transition: transform 0.7s; }
+  transition: transform 0.7s;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1; }
   #sermons h1.show {
     transform: translateY(0); }
 
 #sermons .sermons-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem; }
+  grid-template-columns: repeat(2, 1fr); }
   #sermons .sermons-container .sermons-item {
     position: relative;
     display: grid;
