@@ -83,6 +83,4 @@ window.addEventListener("scroll", () => {
   }
 });
 
-$(".grid-container").slick({
-  rtl: true,
-});
+$(".grid-container").slick();
