@@ -460,3 +460,49 @@ header {
     margin: 0 30px;
   }
 }
+
+// Testimonials
+
+#testimonials {
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    column-gap: 150px;
+    row-gap: 30px;
+    margin: 0 30px;
+
+    div {
+      margin-top: 40px;
+      margin-bottom: 150px;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+
+      img {
+        margin: 0 1rem;
+        margin-bottom: 20px;
+
+        opacity: 0.6;
+        display: inline-block;
+        width: 75px;
+      }
+      p {
+        margin: 0 1rem;
+        font-size: 24px;
+        color: $light-color;
+        line-height: 36px;
+        font-weight: 400;
+      }
+
+      h4 {
+        margin: 0 1rem;
+        color: #fff;
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+      }
+    }
+  }
+}
