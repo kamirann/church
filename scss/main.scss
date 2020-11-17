@@ -508,9 +508,8 @@ header {
 
 #testimonials {
   .grid-wrapper {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 1fr 2fr;
-
     column-gap: 150px;
     row-gap: 30px;
     margin: 0 30px;

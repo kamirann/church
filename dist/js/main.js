@@ -83,4 +83,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-$(".grid-container").slick();
+$(".grid-container").slick({
+  dots: true,
+  cssEase: "linear",
+});
