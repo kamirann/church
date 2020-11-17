@@ -82,3 +82,7 @@ window.addEventListener("scroll", () => {
     navbar.style.background = "rgba(0,0,0,1)";
   }
 });
+
+$(".grid-container").slick({
+  rtl: true,
+});
