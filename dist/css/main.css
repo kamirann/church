@@ -214,7 +214,7 @@ header #hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 30px;
-  padding-top: 240px; }
+  padding: 240px 0 100px; }
   #our-church-story .church-story-container .church-story-content h1 {
     font-size: 4rem;
     font-weight: 700;
@@ -286,7 +286,9 @@ header #hero {
 
 #sermons .sermons-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+  margin: 0 30px; }
   #sermons .sermons-container .sermons-item {
     position: relative;
     display: grid;
@@ -294,7 +296,7 @@ header #hero {
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    padding: 1.5rem;
+    padding: 1.25rem 0;
     margin-bottom: 2rem; }
     #sermons .sermons-container .sermons-item img {
       max-width: 100%;
@@ -316,11 +318,10 @@ header #hero {
       content: "";
       position: absolute;
       bottom: 0;
-      left: 20px;
-      right: 20px;
-      height: 1px;
-      width: 95%;
-      background: #7c7b7b; }
+      left: 0;
+      height: 0.2px;
+      width: 100%;
+      background: rgba(245, 245, 245, 0.2); }
   #sermons .sermons-container .sermons-item:hover {
     cursor: pointer; }
   #sermons .sermons-container .sermons-item:hover.sermons-item:before {
