@@ -83,4 +83,31 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const collapseBox = document.querySelector(".collapse-box");
+const contentCollapse = document.querySelector(".faq-content-collapse");
+const textCollapse = document.querySelector(".faq-text-collapse");
+const innerCollapse = document.querySelector(".inner-content-collapse");
+const innerTextCollapse = document.querySelector(".inner-text-collapse");
+
+collapseBox.addEventListener("click", () => {
+  if (
+    (innerCollapse.style.opacity = "1") &&
+    (textCollapse.style.opacity = "0") &&
+    (innerCollapse.style.visibility = "visible") &&
+    innerCollapse.style.background
+  ) {
+    innerCollapse.style.opacity = "";
+  }
+  textCollapse.style.opacity = "0";
+  innerCollapse.style.opacity = "1";
+  innerCollapse.style.visibility = "visible";
+  innerCollapse.style.background = "transparent";
+  innerCollapse.style.border = "0.3px solid rgba(214, 208, 208, 0.2)";
+  collapseBox.style.transition = "all 0.4s linear";
+  innerCollapse.style.transition = "all 0.5s linear";
+  innerTextCollapse.style.transition = "all 0.4s linear 0.5s";
+  collapseBox.style.paddingBottom = "9rem";
+  innerCollapse.style.padding = "2rem";
+});
+
 $(".grid-container").slick();

@@ -477,13 +477,17 @@ header {
       margin: auto;
 
       .collapse-box {
-        // display: flex;
-        // flex-direction: column;
+        display: flex;
+        flex-direction: column;
         margin-bottom: 2.35rem;
 
         .faq-title-collapse {
           text-align: start;
           margin: 0 0 2.35rem 3.5rem;
+
+          &:hover h3 {
+            color: $secondary-color;
+          }
 
           h3 {
             position: relative;
@@ -507,15 +511,28 @@ header {
           }
         }
 
-        .faq-text-collapse {
-          background: rgba($light-color, 0.2);
+        .faq-content-collapse {
+          background: rgba($light-color, 0.1);
           height: 0.2px;
           margin-left: 3.5rem;
 
-          p {
+          .faq-text-collapse {
+            background: rgba($light-color, 0.01);
+            height: 0.2px;
+          }
+
+          .inner-content-collapse {
             opacity: 0;
             visibility: hidden;
-            color: $primary-color;
+
+            p.inner-text-collapse {
+              color: $light-color;
+              text-align: start;
+              font-size: 18px;
+              font-family: "Roboto", sans-serif;
+              font-weight: 400;
+              line-height: 1.6;
+            }
           }
         }
       }
@@ -527,7 +544,7 @@ header {
 
 #testimonials {
   .grid-wrapper {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 1fr 2fr;
 
     column-gap: 150px;
