@@ -542,6 +542,7 @@ header #hero {
     transform: translateY(0); }
 
 #message .messages-container {
+  margin: 0 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px; }
@@ -605,3 +606,18 @@ header #hero {
       #message .messages-container .message a:hover {
         text-decoration: underline;
         cursor: pointer; }
+
+#message .divider {
+  height: 1px;
+  opacity: 0.2;
+  background: #f5f5f5;
+  margin-top: 40px; }
+
+#message .btn {
+  display: block;
+  height: 56px;
+  width: 180px;
+  margin: 70px auto;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase; }
