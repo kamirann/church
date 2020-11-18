@@ -468,71 +468,70 @@ header {
     }
 
     .faq-collapse {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
+      // display: flex;
+      // flex-direction: column;
+      // text-align: center;
+      // align-items: center;
+      // justify-content: center;
       width: 65%;
       margin: auto;
 
-      .collapse-box {
+      .faq-single-collapse {
         display: flex;
         flex-direction: column;
-        margin-bottom: 2.35rem;
 
         .faq-title-collapse {
-          text-align: start;
-          margin: 0 0 2.35rem 3.5rem;
+          display: flex;
+          align-self: start;
+          margin-bottom: 1.5rem;
+          width: 100%;
+          cursor: pointer;
 
-          &:hover h3 {
+          .icon {
+            color: $light-color;
+            background: $secondary-dark-color;
+            margin-right: 1.35rem;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 35px;
+            height: 35px;
+          }
+
+          &:hover .collapsible {
             color: $secondary-color;
           }
 
-          h3 {
-            position: relative;
+          .collapsible {
+            background: transparent;
             color: $primary-color;
+            padding-bottom: 2.25rem;
+            border-bottom: 0.3px solid rgba(214, 208, 208, 0.2);
+            width: 100%;
             font-size: 20px;
             font-weight: 700;
 
-            &:before {
-              content: "\f105";
-              position: absolute;
-              left: -60px;
-              top: -6px;
-              font-family: "Font Awesome 5 Free";
-              color: $primary-color;
-              opacity: 0.9;
-              background: $secondary-dark-color;
-              width: 36px;
-              height: 36px;
-              text-align: center;
+            &:hover {
+              color: $secondary-color;
             }
           }
         }
 
-        .faq-content-collapse {
-          background: rgba($light-color, 0.1);
-          height: 0.2px;
+        .faq-collapse-box {
+          display: none;
+          margin-bottom: 2.35rem;
           margin-left: 3.5rem;
 
-          .faq-text-collapse {
-            background: rgba($light-color, 0.01);
-            height: 0.2px;
-          }
-
-          .inner-content-collapse {
-            opacity: 0;
-            visibility: hidden;
-
-            p.inner-text-collapse {
-              color: $light-color;
-              text-align: start;
-              font-size: 18px;
-              font-family: "Roboto", sans-serif;
-              font-weight: 400;
-              line-height: 1.6;
-            }
+          p {
+            color: $light-color;
+            text-align: start;
+            border: 0.3px solid rgba(214, 208, 208, 0.2);
+            padding: 2.25rem;
+            font-size: 18px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            transition: all 0.5s linear 0.5s;
           }
         }
       }
