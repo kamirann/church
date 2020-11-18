@@ -98,10 +98,10 @@ for (i = 0; i < titleCollapse.length; i++) {
   titleCollapse[i].addEventListener("click", function () {
     this.classList.toggle("active");
     let collapseBox = this.nextElementSibling;
-    if ((collapseBox.style.display = "block")) {
-      collapseBox.classList.add("alaki");
-    } else if ((collapseBox.style.display = "none")) {
-      collapseBox.classList.add("dolaki");
+    if ($(collapseBox).css("display") == "block") {
+      collapseBox.style.display = "none";
+    } else if ($(collapseBox).css("display") == "none") {
+      collapseBox.style.display = "block";
     }
   });
 }

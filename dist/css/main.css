@@ -97,10 +97,10 @@ a {
 li.slick-active div {
   background: #fff; }
 
-.alaki {
+.block {
   display: block; }
 
-.dolaki {
+.none {
   display: none; }
 
 header #navbar {
