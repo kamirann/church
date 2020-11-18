@@ -78,3 +78,21 @@ a {
 
 .py-3 {
   padding: 4.5rem 0; }
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem !important;
+  list-style: none; }
+
+.dots {
+  height: 14px;
+  width: 14px;
+  background: #ccc;
+  margin: 6px; }
+  .dots:hover {
+    cursor: pointer; }
+
+li.slick-active div {
+  background: #fff; }
