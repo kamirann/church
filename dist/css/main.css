@@ -489,6 +489,16 @@ header #hero {
           line-height: 1.6;
           transition: all 0.5s linear 0.5s; }
 
+#testimonials h1 {
+  transform: translateY(100px);
+  transition: transform 0.7s;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 80px; }
+  #testimonials h1.show {
+    transform: translateY(0); }
+
 #testimonials .grid-wrapper {
   display: grid !important;
   grid-template-columns: 1fr 2fr;

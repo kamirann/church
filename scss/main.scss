@@ -544,6 +544,18 @@ header {
 // Testimonials
 
 #testimonials {
+  h1 {
+    transform: translateY(100px);
+    transition: transform 0.7s;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 80px;
+
+    &.show {
+      transform: translateY(0);
+    }
+  }
   .grid-wrapper {
     display: grid !important;
     grid-template-columns: 1fr 2fr;
