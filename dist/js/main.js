@@ -84,6 +84,10 @@ window.addEventListener("scroll", () => {
 });
 
 $(".grid-container").slick({
+  prevArrow: document.getElementById("slick-prev"),
+  nextArrow: document.getElementById("slick-next"),
   dots: true,
-  cssEase: "linear",
+  customPaging: function (slider, i) {
+    return '<div class="dots"></div>';
+  },
 });
