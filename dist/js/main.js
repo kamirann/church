@@ -119,8 +119,6 @@ for (i = 0; i < titleCollapse.length; i++) {
 //   innerCollapse.style.padding = "2rem";
 // });
 
-$(".grid-container").slick();
-
 // $(singleCollapse).click(() => {
 //   $(collapseBox).slideToggle();
 //   $(icon).css("transform", "rotate(90deg)");
