@@ -530,3 +530,64 @@ header #hero {
       font-size: 18px;
       font-weight: 700;
       line-height: 18px; }
+
+#message h1 {
+  transform: translateY(100px);
+  transition: transform 0.7s;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 80px; }
+  #message h1.show {
+    transform: translateY(0); }
+
+#message .messages-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; }
+  #message .messages-container .message {
+    display: flex;
+    flex-direction: column; }
+    #message .messages-container .message .img-content {
+      margin-bottom: 40px;
+      position: relative; }
+      #message .messages-container .message .img-content div {
+        display: inline-block;
+        overflow: hidden; }
+        #message .messages-container .message .img-content div img {
+          max-width: 100%;
+          display: inline-block;
+          position: relative;
+          transition: transform 500ms ease-in-out;
+          vertical-align: middle; }
+          #message .messages-container .message .img-content div img:hover {
+            transform: scale(1.1);
+            width: 100%;
+            transform-origin: 50% 50%; }
+    #message .messages-container .message .text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: flex-start; }
+      #message .messages-container .message .text-content h3 {
+        color: #fff;
+        margin-bottom: 10px;
+        line-height: 34px;
+        font-weight: 700; }
+      #message .messages-container .message .text-content h5 {
+        font-size: 16px;
+        color: #ffc961;
+        margin-bottom: 20px; }
+      #message .messages-container .message .text-content p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 30px;
+        color: rgba(245, 245, 245, 0.89); }
+    #message .messages-container .message a {
+      font-weight: 600;
+      font-size: 18px;
+      text-decoration: none;
+      color: #ffc961; }
+      #message .messages-container .message a:hover {
+        text-decoration: underline;
+        cursor: pointer; }
