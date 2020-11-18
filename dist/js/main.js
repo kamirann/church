@@ -84,14 +84,7 @@ window.addEventListener("scroll", () => {
 });
 
 // const collapseBox = document.querySelectorAll(".faq-collapse-box");
-const singleCollapse = document.querySelector(".faq-single-collapse");
-const contentCollapse = document.querySelector(".faq-content-collapse");
 const titleCollapse = document.getElementsByClassName("faq-title-collapse");
-const icon = document.querySelectorAll("i");
-const innerCollapse = document.querySelector(".inner-content-collapse");
-const innerTextCollapse = document.querySelector(".inner-text-collapse");
-
-const collapsible = document.getElementsByClassName("collapsible");
 let i;
 
 for (i = 0; i < titleCollapse.length; i++) {
