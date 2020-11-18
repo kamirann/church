@@ -89,7 +89,7 @@ a {
 .dots {
   height: 14px;
   width: 14px;
-  background: #ccc;
+  background: rgba(255, 255, 255, 0.4);
   margin: 6px; }
   .dots:hover {
     cursor: pointer; }
