@@ -99,9 +99,9 @@ for (i = 0; i < titleCollapse.length; i++) {
     this.classList.toggle("active");
     let collapseBox = this.nextElementSibling;
     if ((collapseBox.style.display = "block")) {
-      collapseBox.style.display = "none";
-    } else {
-      collapseBox.style.display = "block";
+      collapseBox.classList.add("alaki");
+    } else if ((collapseBox.style.display = "none")) {
+      collapseBox.classList.add("dolaki");
     }
   });
 }
