@@ -294,6 +294,8 @@ header #hero {
     transform: rotate(-360deg); } }
 
 #sermons h1 {
+  font-size: 4rem;
+  font-weight: 700;
   transform: translateY(100px);
   transition: transform 0.7s;
   font-size: 4rem;
@@ -305,7 +307,7 @@ header #hero {
 #sermons .sermons-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2.5rem;
+  grid-gap: 2.25rem;
   margin: 0 30px; }
   #sermons .sermons-container .sermons-item {
     position: relative;
