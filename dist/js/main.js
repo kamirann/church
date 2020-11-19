@@ -83,39 +83,23 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// const collapseBox = document.querySelectorAll(".faq-collapse-box");
 const titleCollapse = document.getElementsByClassName("faq-title-collapse");
+
 let i;
 
 for (i = 0; i < titleCollapse.length; i++) {
   titleCollapse[i].addEventListener("click", function () {
     this.classList.toggle("active");
     let collapseBox = this.nextElementSibling;
-    if ((collapseBox.style.display = "block")) {
-      collapseBox.classList.add("alaki");
-    } else if ((collapseBox.style.display = "none")) {
-      collapseBox.classList.add("dolaki");
+    collapseBox.classList.add("transition");
+    if (collapseBox.style.display === "block") {
+      collapseBox.style.display = "none";
+    } else {
+      collapseBox.style.display = "block";
     }
   });
 }
 
-// singleCollapse.addEventListener("toggle", () => {
-//   innerCollapse.style.opacity = "0";
-//   collapseBox.style.opacity = "1";
-//   collapseBox.style.visibility = "visible";
-//   collapseBox.style.background = "transparent";
-//   collapseBox.style.border = "0.3px solid rgba(214, 208, 208, 0.2)";
-//   collapseBox.style.transition = "all 0.4s linear";
-//   innerCollapse.style.transition = "all 0.5s linear";
-//   innerTextCollapse.style.transition = "all 0.4s linear 0.5s";
-//   collapseBox.style.paddingBottom = "9rem";
-//   innerCollapse.style.padding = "2rem";
-// });
-
-// $(singleCollapse).click(() => {
-//   $(collapseBox).slideToggle();
-//   $(icon).css("transform", "rotate(90deg)");
-// });
 $(".grid-container").slick({
   prevArrow: document.getElementById("slick-prev"),
   nextArrow: document.getElementById("slick-next"),
